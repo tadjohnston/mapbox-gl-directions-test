@@ -1,0 +1,36 @@
+{
+  "name": "mapbox-directions-test",
+  "repository": "https://github.com/tadjohnston/mapbox-directions-test/",
+  "version": "0.0.1",
+  "private": "true",
+  "scripts": {
+    "build": "APPLICATION_ENVIRONMENT=development webpack -d",
+    "dev": "npm run server",
+    "server": "APPLICATION_ENVIRONMENT=development webpack-dev-server --port 8081 --config webpack.hot.config.js --hot --progress --inline --content-base ./app/assets/",
+    "watch": "npm run build -- --watch"
+  },
+  "dependencies": {
+    "mapbox-gl": "^0.21.0",
+    "mapbox-gl-directions": "^2.1.0",
+    "mapbox-gl-supported": "^1.2.0"
+  },
+  "devDependencies": {
+    "assets-webpack-plugin": "^3.4.0",
+    "babel-core": "^6.13.2",
+    "brfs": "^1.4.3",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^3.8.0",
+    "postcss-loader": "^0.9.1",
+    "sass-loader": "^4.0.0",
+    "script-loader": "^0.7.0",
+    "transform-loader": "^0.2.3",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-config-rentpath": "^1.5.2",
+    "webpack-dev-server": "^1.14.1",
+    "webworkify-webpack": "^1.1.5"
+  }
+}
