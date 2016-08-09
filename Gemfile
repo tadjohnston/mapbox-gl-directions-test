@@ -14,10 +14,6 @@ source source_rubygems do
   gem 'unicorn'
 end
 
-source source_idg do
-  gem 'asset_manifest_helper', '1.1.0'
-end
-
 group :development, :test do
   source source_rubygems do
     gem 'byebug'
