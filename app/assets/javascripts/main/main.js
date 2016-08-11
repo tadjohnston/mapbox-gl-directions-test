@@ -1,6 +1,6 @@
 define([
   'mapbox-gl',
-  'directions'
+  'main/directions'
 ], function(mapboxgl,directions) {
 
   window.mapboxgl = mapboxgl
@@ -13,7 +13,5 @@ define([
       zoom: 13
   });
 
-  map.on('load', function() {
-    directions.loadDirections(map);
-  });
+  directions.loadDirections(map);
 })

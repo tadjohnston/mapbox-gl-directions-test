@@ -3,10 +3,15 @@ define([
 ], function(mapboxgl) {
 
   this.loadDirections = function(map) {
-    require(['mapbox-gl-directions'], (function(_this) {
+    var _this = this;
+
+    require(['mapbox-gl-directions'], function() {
       var directions = _this.addDirections(map);
-      directions.setDestination([34.0522,-118.2436]);
-    })(this));
+
+      map.on('load', function(e) {
+        directions.setDestination([-118.2436, 34.0522]);
+      });
+    });
   };
 
   this.addDirections = function(map) {

@@ -1,0 +1,5 @@
+@import "~mapbox-gl-directions/dist/mapbox-gl-directions.css";
+
+.mapbox {
+  height: 400px;
+}
