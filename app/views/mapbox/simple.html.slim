@@ -1,0 +1,33 @@
+#map.mapbox
+.directions-btn-ctr
+  .btn.btn-primary onClick="setupDirections()" Get Directions
+
+script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js'
+
+javascript:
+  mapboxgl.accessToken = 'pk.eyJ1IjoidHJpc3RlbiIsImEiOiJiUzBYOEJzIn0.VyXs9qNWgTfABLzSI3YcrQ';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9',
+    center: [-79.4512, 43.6568],
+    zoom: 13
+  });
+
+
+  function setupDirections() {
+
+    var js = document.createElement("script");
+
+    js.type = "text/javascript";
+    js.src = 'https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v2.1.0/mapbox-gl-directions.js';
+
+    document.body.appendChild(js);
+
+    setTimeout(function() {
+      var directions = new mapboxgl.Directions();
+      map.addControl(directions);
+
+      directions.setOrigin([-79.4512, 43.6568]);
+      directions.setDestination('Montreal Quebec');
+    },1000)
+  }

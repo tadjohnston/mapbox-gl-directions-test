@@ -10,6 +10,7 @@
     "watch": "npm run build -- --watch"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "mapbox-gl": "^0.21.0",
     "mapbox-gl-directions": "^2.1.0",
     "mapbox-gl-supported": "^1.2.0"

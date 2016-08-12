@@ -1,5 +1,11 @@
+@import "~bootstrap/dist/css/bootstrap.css";
 @import "~mapbox-gl-directions/dist/mapbox-gl-directions.css";
 
 .mapbox {
   height: 400px;
+}
+
+.directions-btn-ctr {
+  padding: 10px;
+  text-align: center;
 }
