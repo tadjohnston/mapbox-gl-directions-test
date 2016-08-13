@@ -5,7 +5,8 @@ var webpack = require('webpack')
 config.entry = {
   css: './app/assets/stylesheets/main',
   main: './app/assets/javascripts/main/main',
-  working: './app/assets/javascripts/working/main'
+  working: './app/assets/javascripts/working/main',
+  straight: './app/assets/javascripts/straight/main'
 };
 
 config.module.loaders.push({

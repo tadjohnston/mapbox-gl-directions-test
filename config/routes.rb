@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   get '/working', to: 'mapbox#working'
   get '/simple', to: 'mapbox#simple'
+  get '/straight', to: 'mapbox#straight'
 end
