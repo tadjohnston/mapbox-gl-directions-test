@@ -1,7 +1,7 @@
 define([
   'mapbox-gl',
   'mapbox-gl-directions'
-], function(mapboxgl,directions) {
+], function(mapboxgl,Directions) {
 
   window.mapboxgl = mapboxgl
 
@@ -13,7 +13,7 @@ define([
       zoom: 13
   });
 
-  var directions = new mapboxgl.Directions({
+  var directions = new Directions({
       container: 'directions',
       interactive: false
   });
