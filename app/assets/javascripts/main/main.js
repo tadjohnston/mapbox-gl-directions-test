@@ -12,14 +12,13 @@ define([
       zoom: 13
   });
 
-  map.on('load', function(e) {
-    require(['mapbox-gl-directions'], function() {
+  require(['mapbox-gl-directions'], function() {
+    var directions = new mapboxgl.Directions({
+      container: 'directions',
+      interactive: false
+    });
 
-      var directions = new mapboxgl.Directions({
-        container: 'directions',
-        interactive: false
-      });
-
+    map.on('load', function(e) {
       map.addControl(directions);
       directions.setDestination([-118.2436, 34.0522]);
     });

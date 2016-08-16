@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "mapbox-gl": "^0.21.0",
-    "mapbox-gl-directions": "git+ssh://git@github.com/mapbox/mapbox-gl-directions.git#22e556cd71c71d837614dbc5fed72f1c1474150f",
+    "mapbox-gl": "^0.22.0",
+    "mapbox-gl-directions": "git+ssh://git@github.com/mapbox/mapbox-gl-directions.git#5af10a21b38f8a9667ee2af0141df314543acf08",
     "mapbox-gl-supported": "^1.2.0"
   },
   "devDependencies": {
